@@ -9,38 +9,43 @@ class App extends Component {
     return (
       <div className="demo-big-content">
         <Layout>
-          <Header
+          <Header 
             className="header-color"
             title={
-              <Link style={{ textDecoration: "none", color: "white" }} to="/">
+              <Link style={{ textDecoration: "none", color: "white", fontSize: '24px' }} to="/">
                 MyPortfolio
               </Link>
-            }
-            scroll
+            }scroll
           >
-            <Navigation>
-              <Link to="/resume">Resume</Link>
-              <Link to="/blog">Blog</Link>
-              <Link to="/aboutme">About Me</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/contact">Contact</Link>
-            </Navigation>
+            <div className= "links">
+              <Navigation>
+                <Link to="/resume" style={{ color: '#fff', fontSize: '18px' }}>Resume</Link>
+                <Link to="/blog" style={{ color: '#fff', fontSize: '18px'}}>Blog</Link>
+                <Link to="/aboutme" style={{ color: '#fff', fontSize: '18px' }}>About Me</Link>
+                <Link to="/projects" style={{ color: '#fff', fontSize: '18px' }}>Projects</Link>
+                <Link to="/contact" style={{ color: '#fff', fontSize: '18px' }}>Contact</Link>
+              </Navigation>
+            </div>
           </Header>
+          
           <Drawer
             title={
               <Link style={{ textDecoration: "none", color: "black" }} to="/">
                 MyPortfolio
               </Link>
             }
-          >
-            <Navigation>
-              <Link to="/resume">Resume</Link>
-              <Link to="/blog">Blog</Link>
-              <Link to="/aboutme">About Me</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/contact">Contact</Link>
-            </Navigation>
-          </Drawer>
+          > <div className= "links">
+              <Navigation>
+              <Link to="/resume" style={{ color: '#000', fontSize: '18px' }}>Resume</Link>
+                <Link to="/blog" style={{ color: '#000', fontSize: '18px'}}>Blog</Link>
+                <Link to="/aboutme" style={{ color: '#000', fontSize: '18px' }}>About Me</Link>
+                <Link to="/projects" style={{ color: '#000', fontSize: '18px' }}>Projects</Link>
+                <Link to="/contact" style={{ color: '#000', fontSize: '18px' }}>Contact</Link>
+              </Navigation>
+            </div>
+          </Drawer> 
+
+          
           <Content>
             <div className="page-content" />
             <Main />
@@ -50,5 +55,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;
