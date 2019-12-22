@@ -124,7 +124,8 @@
 }
 
 .contact-grid h2 {
-  font-family: "Anton", sans-serif;
+  font-family: "Oxygen", sans-serif;
+  font: bold;
 }
 
 .contact-grid p {
@@ -142,6 +143,13 @@
   font-size: 66px;
   padding-right: 5rem;
 }
+#contact-a-1{
+  color: black;
+ }
+#contact-a-2{
+  color: black;
+ }
+ 
 
 /* progject page css */
 #card-progject-1{
@@ -153,10 +161,3 @@
 }
 
 
-
-/* About Page css */
-
-.about {
-  align: center;
-  margin: 100px;
-}
