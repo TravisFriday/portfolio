@@ -99,9 +99,7 @@
 }
 
 .pdfview object {
-  background: white;
   align: middle;
-  margin-top: 0px;
 }
 
 /* contact page css */
@@ -126,7 +124,8 @@
 }
 
 .contact-grid h2 {
-  font-family: "Anton", sans-serif;
+  font-family: "Oxygen", sans-serif;
+  font: bold;
 }
 
 .contact-grid p {
@@ -144,15 +143,21 @@
   font-size: 66px;
   padding-right: 5rem;
 }
+#contact-a-1{
+  color: black;
+ }
+#contact-a-2{
+  color: black;
+ }
+ 
 
-/* contact page css */
+/* progject page css */
+#card-progject-1{
+  color: '#fff'; 
+  height: '176px'; 
+  background: 'url(Appview) center/cover';
+  width: "100%";
 
-
-
-
-/* About Page css */
-
-.about {
-  align: center;
-  margin: 100px;
 }
+
+

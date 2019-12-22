@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
+import Appview from "../files/appview.png";
 
 
 class Projects extends Component {
@@ -15,9 +16,9 @@ class Projects extends Component {
         <div className="projects-grid">
           {/* Project 1 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #1</CardTitle>
+            <CardTitle id="card-project-1" style={{text: "center", color: '#000', height: '176px', background: 'url(Appview) center/cover',width: "100%"}} >React Project #1</CardTitle>
             <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+              Labrador: An app to track books that the user is currently reading, wants to read, and completed reading
             </CardText>
             <CardActions border>
               <Button colored>GitHub</Button>
@@ -28,24 +29,16 @@ class Projects extends Component {
               <IconButton name="share" />
             </CardMenu>
           </Card>
+          
 
-          {/* Project 2 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #2</CardTitle>
-            <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            </CardText>
-            <CardActions border>
-              <Button colored>GitHub</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
-            </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
+          
 
-          {/* Project 3 */}
+        </div>
+      )
+    } else if(this.state.activeTab === 1) {
+      return (
+        <div className="projects-grid"> 
+        {/* Python Project 1 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #3</CardTitle>
             <CardText>
@@ -61,12 +54,6 @@ class Projects extends Component {
             </CardMenu>
           </Card>
         </div>
-
-
-      )
-    } else if(this.state.activeTab === 1) {
-      return (
-        <div><h1>This is Angular</h1></div>
       )
     } else if(this.state.activeTab === 2) {
       return (
@@ -79,17 +66,12 @@ class Projects extends Component {
     }
 
   }
-
-
-
   render() {
     return(
       <div>
         <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
           <Tab>React</Tab>
-          <Tab>Angular</Tab>
-          <Tab>VueJS</Tab>
-          <Tab>MongoDB</Tab>
+          <Tab>Python</Tab>
         </Tabs>
 
 

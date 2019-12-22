@@ -21,7 +21,6 @@ class App extends Component {
               <Navigation>
                 <Link to="/resume" style={{ color: '#fff', fontSize: '18px' }}>Resume</Link>
                 <Link to="/blog" style={{ color: '#fff', fontSize: '18px'}}>Blog</Link>
-                <Link to="/aboutme" style={{ color: '#fff', fontSize: '18px' }}>About Me</Link>
                 <Link to="/projects" style={{ color: '#fff', fontSize: '18px' }}>Projects</Link>
                 <Link to="/contact" style={{ color: '#fff', fontSize: '18px' }}>Contact</Link>
               </Navigation>
@@ -38,7 +37,6 @@ class App extends Component {
               <Navigation>
               <Link to="/resume" style={{ color: '#000', fontSize: '18px' }}>Resume</Link>
                 <Link to="/blog" style={{ color: '#000', fontSize: '18px'}}>Blog</Link>
-                <Link to="/aboutme" style={{ color: '#000', fontSize: '18px' }}>About Me</Link>
                 <Link to="/projects" style={{ color: '#000', fontSize: '18px' }}>Projects</Link>
                 <Link to="/contact" style={{ color: '#000', fontSize: '18px' }}>Contact</Link>
               </Navigation>
