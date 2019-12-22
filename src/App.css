@@ -99,9 +99,7 @@
 }
 
 .pdfview object {
-  background: white;
   align: middle;
-  margin-top: 0px;
 }
 
 /* contact page css */
@@ -145,8 +143,14 @@
   padding-right: 5rem;
 }
 
-/* contact page css */
+/* progject page css */
+#card-progject-1{
+  color: '#fff'; 
+  height: '176px'; 
+  background: 'url(Appview) center/cover';
+  width: "100%";
 
+}
 
 
 
