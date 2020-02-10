@@ -24,12 +24,12 @@ class Projects extends Component {
                 />
                 <Card.Body>
                   <Card.Title style={{ fontSize: "2rem", textAlign: "center" }}>
-                    Black Friday
+                    My Reads
                   </Card.Title>
                   <Card.Text>
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    This web application built in React.js that allows you to
+                    keep track of books that you want to read, currently reading
+                    and finished reading.
                   </Card.Text>
                 </Card.Body>
                 <CardActions border>
@@ -52,8 +52,7 @@ class Projects extends Component {
                     Portfolio Site
                   </Card.Title>
                   <Card.Text>
-                    This card has supporting text below as a natural lead-in to
-                    additional content.{" "}
+                    A portfolio web application built with React.js.
                   </Card.Text>
                 </Card.Body>
                 <CardActions border>
@@ -76,9 +75,8 @@ class Projects extends Component {
                     Inventory
                   </Card.Title>
                   <Card.Text>
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This card has even longer
-                    content than the first to show that equal height action.
+                    This is React/Redux web application that allows the user to
+                    add watches to their shopping cart.
                   </Card.Text>
                 </Card.Body>
                 <CardActions border>

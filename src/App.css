@@ -124,8 +124,8 @@
   justify-content: center;
   width: 80%;
   height: 550px;
-  color: black;
-  background: white;
+  color: white;
+
   margin-bottom: 20px;
 }
 
@@ -150,10 +150,10 @@
   padding-right: 5rem;
 }
 #contact-a-1 {
-  color: black;
+  color: white;
 }
 #contact-a-2 {
-  color: black;
+  color: white;
 }
 
 /* project page css */
