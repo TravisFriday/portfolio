@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-import Appview from "../files/appview.png";
+import React, { Component } from "react";
 
+import Appview from "../files/appview.png";
+import { Container, Row, Col, Image, Card, CardDeck } from "react-bootstrap";
+import { CardActions, Button, Grid, Cell, Tab, Tabs } from "react-mdl";
 
 class Projects extends Component {
   constructor(props) {
@@ -10,80 +11,188 @@ class Projects extends Component {
   }
 
   toggleCategories() {
-
-    if(this.state.activeTab === 0){
-      return(
-        <div className="projects-grid">
-          {/* Project 1 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle id="card-project-1" style={{text: "center", color: '#000', height: '176px', background: 'url(Appview) center/cover',width: "100%"}} >React Project #1</CardTitle>
-            <CardText>
-              Labrador: An app to track books that the user is currently reading, wants to read, and completed reading
-            </CardText>
-            <CardActions border>
-              <Button colored>GitHub</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
-            </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
-          
-
-          
-
+    if (this.state.activeTab === 0) {
+      return (
+        <Container>
+          <Row>
+            <CardDeck>
+              <Card>
+                <Card.Img
+                  variant="top"
+                  src="https://s3-us-west-2.amazonaws.com/tfportfolio.com/img/appview.png"
+                  style={{ width: "100%", height: "30vh", objectFit: "cover" }}
+                />
+                <Card.Body>
+                  <Card.Title style={{ fontSize: "2rem", textAlign: "center" }}>
+                    Black Friday
+                  </Card.Title>
+                  <Card.Text>
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </Card.Text>
+                </Card.Body>
+                <CardActions border>
+                  <Button
+                    colored
+                    href="https://github.com/TravisFriday/MyReads"
+                  >
+                    GitHub
+                  </Button>
+                </CardActions>
+              </Card>
+              <Card>
+                <Card.Img
+                  variant="top"
+                  src="https://s3-us-west-2.amazonaws.com/tfportfolio.com/img/portfolioHomepage.jpg"
+                  style={{ width: "100%", height: "30vh", objectFit: "cover" }}
+                />
+                <Card.Body>
+                  <Card.Title style={{ fontSize: "2rem", textAlign: "center" }}>
+                    Portfolio Site
+                  </Card.Title>
+                  <Card.Text>
+                    This card has supporting text below as a natural lead-in to
+                    additional content.{" "}
+                  </Card.Text>
+                </Card.Body>
+                <CardActions border>
+                  <Button
+                    colored
+                    href="https://github.com/TravisFriday/portfolio"
+                  >
+                    GitHub
+                  </Button>
+                </CardActions>
+              </Card>
+              <Card>
+                <Card.Img
+                  variant="top"
+                  src="https://s3-us-west-2.amazonaws.com/tfportfolio.com/img/freshWears.jpg"
+                  style={{ width: "100%", height: "30vh", objectFit: "cover" }}
+                />
+                <Card.Body>
+                  <Card.Title style={{ fontSize: "2rem", textAlign: "center" }}>
+                    Inventory
+                  </Card.Title>
+                  <Card.Text>
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This card has even longer
+                    content than the first to show that equal height action.
+                  </Card.Text>
+                </Card.Body>
+                <CardActions border>
+                  <Button
+                    colored
+                    href="https://github.com/TravisFriday/inventory"
+                  >
+                    GitHub
+                  </Button>
+                </CardActions>
+              </Card>
+            </CardDeck>
+          </Row>
+        </Container>
+      );
+    } else if (this.state.activeTab === 1) {
+      return (
+        <Container>
+          <Row>
+            <CardDeck>
+              <Card>
+                <Card.Img variant="top" src={Appview} />
+                <Card.Body>
+                  <Card.Title>Card title</Card.Title>
+                  <Card.Text>
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </Card.Text>
+                </Card.Body>
+                <CardActions border>
+                  <Button
+                    colored
+                    href="https://github.com/TravisFriday/MyReads"
+                  >
+                    GitHub
+                  </Button>
+                </CardActions>
+              </Card>
+              <Card>
+                <Card.Img variant="top" src={Appview} />
+                <Card.Body>
+                  <Card.Title>Card title</Card.Title>
+                  <Card.Text>
+                    This card has supporting text below as a natural lead-in to
+                    additional content.{" "}
+                  </Card.Text>
+                </Card.Body>
+                <CardActions border>
+                  <Button
+                    colored
+                    href="https://github.com/TravisFriday/MyReads"
+                  >
+                    GitHub
+                  </Button>
+                </CardActions>
+              </Card>
+              <Card>
+                <Card.Img variant="top" src={Appview} />
+                <Card.Body>
+                  <Card.Title>Card title</Card.Title>
+                  <Card.Text>
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This card has even longer
+                    content than the first to show that equal height action.
+                  </Card.Text>
+                </Card.Body>
+                <CardActions border>
+                  <Button
+                    colored
+                    href="https://github.com/TravisFriday/MyReads"
+                  >
+                    GitHub
+                  </Button>
+                </CardActions>
+              </Card>
+            </CardDeck>
+          </Row>
+        </Container>
+      );
+    } else if (this.state.activeTab === 2) {
+      return (
+        <div>
+          <h1>This is VueJS</h1>
         </div>
-      )
-    } else if(this.state.activeTab === 1) {
+      );
+    } else if (this.state.activeTab === 3) {
       return (
-        <div className="projects-grid"> 
-        {/* Python Project 1 */}
-          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://xtnotes-1255646395.coshk.myqcloud.com/images/react-1.svg) center / cover'}} >React Project #3</CardTitle>
-            <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            </CardText>
-            <CardActions border>
-              <Button colored>GitHub</Button>
-              <Button colored>CodePen</Button>
-              <Button colored>Live Demo</Button>
-            </CardActions>
-            <CardMenu style={{color: '#fff'}}>
-              <IconButton name="share" />
-            </CardMenu>
-          </Card>
+        <div>
+          <h1>This is MongoDB</h1>
         </div>
-      )
-    } else if(this.state.activeTab === 2) {
-      return (
-        <div><h1>This is VueJS</h1></div>
-      )
-    } else if(this.state.activeTab === 3) {
-      return (
-        <div><h1>This is MongoDB</h1></div>
-      )
+      );
     }
-
   }
   render() {
-    return(
-      <div>
-        <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-          <Tab>React</Tab>
-          <Tab>Python</Tab>
+    return (
+      <div id="tabs">
+        <Tabs
+          activeTab={this.state.activeTab}
+          onChange={tabId => this.setState({ activeTab: tabId })}
+          ripple
+          style={{}}
+        >
+          <Tab style={{ color: "white", background: "#333333" }}>React</Tab>
+          {/*<Tab style={{ color: "white", background: "#333333" }}>Python</Tab>*/}
         </Tabs>
 
-
-          <Grid>
-            <Cell col={12}>
-              <div className="content">{this.toggleCategories()}</div>
-            </Cell>
-          </Grid>
-
-
+        <Grid>
+          <Cell col={12}>
+            <div className="content">{this.toggleCategories()}</div>
+          </Cell>
+        </Grid>
       </div>
-    )
+    );
   }
 }
 

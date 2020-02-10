@@ -1,26 +1,30 @@
 import React, { Component } from "react";
 import profilePic from "../files/linkedInpic.png";
-import Views from "../files/views.jpg"
+import Views from "../files/views.jpg";
 
 class Landing extends Component {
   render() {
     return (
-
       <div>
+        {" "}
         {/*<img src= {Modelto} id="modelpic"></img>*/}
-        
         <div>
           <div className="container" id="landing-grid">
-            <div className="row" id= "row1" /*style={{backgroundImage: Modelto, backgroundSize: "cover", backgroundPosition: "center"}} */>
-              <div className= "col-lg-12">
+            <div
+              className="row"
+              id="row1"
+              /*style={{backgroundImage: Modelto, backgroundSize: "cover", backgroundPosition: "center"}} */
+            >
+              <div className="col-lg-12">
                 <div className="avatarPic">
                   <img src={profilePic} alt="avatar" className="avatar-img" />
                 </div>
                 <div className="banner-text">
                   <h1>Software Engineer</h1>
                   <hr />
-                  <p style= {{whiteSpace: "pre-wrap"}}>
-                    C++   |   Python   |   Angular   |   React   |   NodeJS   |   MongoDB
+                  <p style={{ whiteSpace: "pre-wrap" }}>
+                    C++&#160;&#160;|&#160;&#160;Python&#160;&#160;|&#160;&#160;Angular&#160;&#160;|
+                    &#160;&#160;React&#160;&#160;|&#160;&#160;NodeJS&#160;&#160;|&#160;&#160;MongoDB
                   </p>
                   <div className="social-links">
                     {/* LinkedIn */}
@@ -41,20 +45,12 @@ class Landing extends Component {
                       <i className="fa fa-github-square" aria-hidden="true" />
                     </a>
                   </div>
-                  </div>
+                </div>
               </div>
             </div>
-            </div>
           </div>
-              
-            </div>
-          
-        
-        
-        
-          
-        
-      
+        </div>
+      </div>
     );
   }
 }
