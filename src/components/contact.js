@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
-import contactPic from "../files/contact.jpg";
 
 class Contact extends Component {
   render() {
@@ -9,7 +8,11 @@ class Contact extends Component {
         <Grid className="contact-grid">
           <Cell col={6}>
             <h2>Travis Friday</h2>
-            <img src={contactPic} alt="avatar" style={{ height: "250px" }} />
+            <img
+              src="https://s3-us-west-2.amazonaws.com/tfportfolio.com/img/contact.jpg"
+              alt="avatar"
+              style={{ height: "250px" }}
+            />
 
             <p
               style={{

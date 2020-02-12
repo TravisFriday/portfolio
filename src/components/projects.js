@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-import Appview from "../files/appview.png";
 import { Container, Row, Col, Image, Card, CardDeck } from "react-bootstrap";
 import { CardActions, Button, Grid, Cell, Tab, Tabs } from "react-mdl";
 
@@ -15,7 +14,7 @@ class Projects extends Component {
       return (
         <Container>
           <Row>
-            <CardDeck style={{ opacity: "75%" }}>
+            <CardDeck style={{ opacity: "80%" }}>
               <Card>
                 <Card.Img
                   variant="top"
@@ -98,7 +97,10 @@ class Projects extends Component {
           <Row>
             <CardDeck>
               <Card>
-                <Card.Img variant="top" src={Appview} />
+                <Card.Img
+                  variant="top"
+                  src="https://s3-us-west-2.amazonaws.com/tfportfolio.com/img/appview.png"
+                />
                 <Card.Body>
                   <Card.Title>Card title</Card.Title>
                   <Card.Text>
@@ -117,7 +119,10 @@ class Projects extends Component {
                 </CardActions>
               </Card>
               <Card>
-                <Card.Img variant="top" src={Appview} />
+                <Card.Img
+                  variant="top"
+                  src="https://s3-us-west-2.amazonaws.com/tfportfolio.com/img/appview.png"
+                />
                 <Card.Body>
                   <Card.Title>Card title</Card.Title>
                   <Card.Text>
@@ -135,7 +140,10 @@ class Projects extends Component {
                 </CardActions>
               </Card>
               <Card>
-                <Card.Img variant="top" src={Appview} />
+                <Card.Img
+                  variant="top"
+                  src="https://s3-us-west-2.amazonaws.com/tfportfolio.com/img/appview.png"
+                />
                 <Card.Body>
                   <Card.Title>Card title</Card.Title>
                   <Card.Text>

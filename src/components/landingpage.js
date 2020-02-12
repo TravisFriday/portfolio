@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import profilePic from "../files/linkedInpic.png";
-import Views from "../files/views.jpg";
 
 class Landing extends Component {
   render() {
@@ -17,7 +15,11 @@ class Landing extends Component {
             >
               <div className="col-lg-12">
                 <div className="avatarPic">
-                  <img src={profilePic} alt="avatar" className="avatar-img" />
+                  <img
+                    src="https://s3-us-west-2.amazonaws.com/tfportfolio.com/img/linkedInpic.png"
+                    alt="avatar"
+                    className="avatar-img"
+                  />
                 </div>
                 <div className="banner-text">
                   <h1>Software Engineer</h1>
