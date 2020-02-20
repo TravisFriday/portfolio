@@ -67,7 +67,7 @@
 }
 
 .banner-text h1 {
-  font-size: 66px;
+  font-size: 3.8rem;
   font-weight: bold;
   color: white;
 }
@@ -80,20 +80,20 @@
 
 .banner-text p {
   color: white;
-  font-size: 20px;
-  padding: 1em;
+  font-size: 1.3rem;
+  padding: 1rem;
 }
 
 .social-links {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 12rem;
   margin: auto;
 }
 
 .social-links i {
   color: white;
-  font-size: 5em;
+  font-size: 3.8rem;
   padding: 8px;
 }
 
@@ -119,7 +119,7 @@
   padding-top: 2em;
 }
 
-.contact-grid {
+#contact-grid {
   text-align: center;
   justify-content: center;
   width: 80%;
@@ -129,17 +129,17 @@
   margin-bottom: 20px;
 }
 
-.contact-grid h2 {
+#contact-grid h2 {
   font-family: "Oxygen", sans-serif;
   font: bold;
 }
 
-.contact-grid p {
+#contact-grid p {
   font-family: "Oxygen", sans-serif;
   font-weight: bold;
 }
 
-.contact-grid hr {
+#contact-grid hr {
   border-top: 5px dotted black;
   width: 50%;
   margin: auto;
@@ -160,10 +160,75 @@
 #card-progject-1 {
   color: "#fff";
   height: "176px";
-  background: "url(Appview) center/cover";
+
   width: "100%";
 }
 
 #tabs {
   color: "white";
+}
+
+/* Queries */
+
+@media only screen and (max-width: 1290px) {
+  .mdl-list__item-primary-content {
+    font-size: 1.4rem;
+  }
+  .mdl-list__item-primary-content i {
+    padding-right: 3rem;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  .banner-text h1 {
+    font-size: 3rem;
+  }
+  .social-links i {
+    font-size: 3rem;
+  }
+  .banner-text p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 645px) {
+  .banner-text h1 {
+    font-size: 2rem;
+  }
+  .social-links i {
+    font-size: 2.6rem;
+  }
+  .banner-text p {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 496px) {
+  .mdl-list__item-primary-content {
+    font-size: 1.1rem;
+  }
+  .mdl-list__item-primary-content i {
+    padding-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .banner-text h1 {
+    font-size: 1.5rem;
+  }
+  .social-links i {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 372px) {
+  .mdl-list__item-primary-content {
+    font-size: 0.9rem;
+  }
+  .mdl-list__item-primary-content i {
+    padding-right: 1rem;
+  }
+  .banner-text p {
+    font-size: 0.8rem;
+  }
 }

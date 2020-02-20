@@ -1,24 +1,24 @@
 import React, { Component } from "react";
 import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
+import { Container, Row, Col, ListGroup } from "react-bootstrap";
 
 class Contact extends Component {
   render() {
     return (
-      <div className="contact-body" style={{ textShadow: "1px 5px 10px #000" }}>
-        <Grid className="contact-grid">
-          <Cell col={6}>
+      <Container id="contact-grid" style={{ textShadow: "1px 5px 10px #000" }}>
+        <Row className="justify-content-center">
+          <Col xs={12} lg={6}>
             <h2>Travis Friday</h2>
             <img
               src="https://s3-us-west-2.amazonaws.com/tfportfolio.com/img/contact.jpg"
               alt="avatar"
-              style={{ height: "250px" }}
+              style={{ height: "13rem" }}
             />
 
             <p
               style={{
-                fontSize: "15px",
-                width: "75%",
-                margin: "auto",
+                fontSize: "1rem",
+                width: "auto",
                 paddingTop: "1em",
                 fontFamily: "Oxygen",
                 color: "white"
@@ -30,29 +30,39 @@ class Contact extends Component {
               interest in mixed reality technology, biomedical engineering
               technology, and green technology.
             </p>
-          </Cell>
-          <Cell col={6}>
-            <h2>Contact Me</h2>
+          </Col>
+          <Col xs={12} lg={6}>
+            <h2 style={{ fontSize: "3rem" }}>Contact Me</h2>
             <div className="contact-list">
-              <List>
-                <ListItem>
+              <ListGroup
+                variant="flush"
+                style={{ textAlign: "left", fontSize: "2rem" }}
+              >
+                <ListGroup.Item
+                  style={{
+                    backgroundColor: "transparent"
+                  }}
+                >
                   <ListItemContent
                     style={{
-                      fontSize: "30px",
                       fontFamily: "Oxygen",
-                      whiteSpace: "pre-wrap",
-                      color: "white"
+                      whiteSpace: "pre-wrap"
                     }}
                   >
-                    <i className="fa fa-envelope" aria-hidden="true" />
+                    <i
+                      className="fa fa-envelope"
+                      aria-hidden="true"
+                      style={{
+                        fontSize: "1em"
+                      }}
+                    />
                     travisgifriday@gmail.com
                   </ListItemContent>
-                </ListItem>
+                </ListGroup.Item>
 
-                <ListItem>
+                <ListGroup.Item style={{ backgroundColor: "transparent" }}>
                   <ListItemContent
                     style={{
-                      fontSize: "30px",
                       fontFamily: "Oxygen",
                       whiteSpace: "pre-wrap"
                     }}
@@ -63,15 +73,20 @@ class Contact extends Component {
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <i className="fa fa-linkedin-square" aria-hidden="true" />{" "}
+                      <i
+                        className="fa fa-linkedin-square"
+                        aria-hidden="true"
+                        style={{
+                          fontSize: "1em"
+                        }}
+                      />
                       linkedin.com/in/travisfriday
                     </a>
                   </ListItemContent>
-                </ListItem>
-                <ListItem>
+                </ListGroup.Item>
+                <ListGroup.Item style={{ backgroundColor: "transparent" }}>
                   <ListItemContent
                     style={{
-                      fontSize: "30px",
                       fontFamily: "Oxygen",
                       whiteSpace: "pre-wrap"
                     }}
@@ -82,16 +97,22 @@ class Contact extends Component {
                       rel="noopener noreferrer"
                       target="_blank"
                     >
-                      <i className="fa fa-github-square" aria-hidden="true" />{" "}
+                      <i
+                        className="fa fa-github-square"
+                        aria-hidden="true"
+                        style={{
+                          fontSize: "1em"
+                        }}
+                      />
                       github.com/TravisFriday
                     </a>
                   </ListItemContent>
-                </ListItem>
-              </List>
+                </ListGroup.Item>
+              </ListGroup>
             </div>
-          </Cell>
-        </Grid>
-      </div>
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }
