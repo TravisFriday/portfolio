@@ -10,9 +10,9 @@ class Contact extends Component {
           <Col xs={12} lg={6}>
             <h2>Travis Friday</h2>
             <img
-              src="https://s3-us-west-2.amazonaws.com/tfportfolio.com/img/contact.jpg"
+              src="https://s3-us-west-2.amazonaws.com/tfportfolio.com/img/model1.jpg"
               alt="avatar"
-              style={{ height: "13rem" }}
+              style={{ height: "25rem" }}
             />
 
             <p

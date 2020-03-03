@@ -125,7 +125,6 @@
   width: 80%;
   height: 550px;
   color: white;
-
   margin-bottom: 20px;
 }
 
@@ -166,6 +165,11 @@
 
 #tabs {
   color: "white";
+}
+
+/* blog page css */
+#blog-card {
+  font-family: "Roboto", sans-serif;
 }
 
 /* Queries */
