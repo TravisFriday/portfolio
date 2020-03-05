@@ -23,6 +23,11 @@
   font-size: 20px;
 }
 
+.material-icons {
+  background-color: black;
+  color: white;
+}
+
 /* Landing Page css */
 
 .container {
@@ -59,8 +64,9 @@
 }
 
 .banner-text {
+  box-shadow: 1px 2px 20px #000;
   background-color: black;
-  opacity: 0.85;
+  opacity: 0.8;
   width: 65%;
   margin: auto;
   border-radius: 10px;
@@ -135,7 +141,6 @@
 
 #contact-grid p {
   font-family: "Oxygen", sans-serif;
-  font-weight: bold;
 }
 
 #contact-grid hr {

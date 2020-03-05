@@ -46,12 +46,15 @@ function Blog() {
                 textShadow: "1px 5px 10px #000"
               }}
             >
-              My Blog Posts (Still Under Construction)
+              My Blog
             </h1>
           </ListSubheader>
         </GridListTile>
         {BlogPost.map(tile => (
-          <GridListTile key={tile.img}>
+          <GridListTile
+            key={tile.img}
+            style={{ paddingLeft: "1rem", paddingRight: "1rem" }}
+          >
             <img src={tile.img} alt={tile.title} />
 
             <GridListTileBar

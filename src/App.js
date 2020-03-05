@@ -14,6 +14,7 @@ class App extends Component {
           style={{
             background:
               "url(https://s3-us-west-2.amazonaws.com/tfportfolio.com/img/backgroundimg.png) center / cover"
+
             //background: "white"
           }}
         >
@@ -56,6 +57,7 @@ class App extends Component {
           </Header>
 
           <Drawer
+            //style={{ marginBottom: "3rem" }}
             title={
               <Link style={{ textDecoration: "none", color: "black" }} to="/">
                 MyPortfolio

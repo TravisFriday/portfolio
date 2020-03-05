@@ -5,9 +5,24 @@ import { Container, Row, Col, ListGroup } from "react-bootstrap";
 class Contact extends Component {
   render() {
     return (
-      <Container id="contact-grid" style={{ textShadow: "1px 5px 10px #000" }}>
-        <Row className="justify-content-center">
-          <Col xs={12} lg={6}>
+      <Container
+        id="contact-grid"
+        style={{
+          //textShadow: "1px 5px 10px #000",
+          marginTop: "25px"
+        }}
+      >
+        <Row
+          className="justify-content-center"
+          style={{ boxShadow: "2px 5px 10px #000" }}
+        >
+          <Col
+            xs={12}
+            lg={6}
+            style={{
+              background: "rgba(0, 0, 0, 0.7)"
+            }}
+          >
             <h2>Travis Friday</h2>
             <img
               src="https://s3-us-west-2.amazonaws.com/tfportfolio.com/img/model1.jpg"
@@ -31,7 +46,7 @@ class Contact extends Component {
               technology, and green technology.
             </p>
           </Col>
-          <Col xs={12} lg={6}>
+          <Col xs={12} lg={6} style={{ background: "rgba(0, 0, 0, 0.7)" }}>
             <h2 style={{ fontSize: "3rem" }}>Contact Me</h2>
             <div className="contact-list">
               <ListGroup

@@ -14,7 +14,7 @@ class Projects extends Component {
       return (
         <Container>
           <Row>
-            <CardDeck style={{ opacity: "80%" }}>
+            <CardDeck style={{ opacity: "100%" }}>
               <Card>
                 <Card.Img
                   variant="top"
