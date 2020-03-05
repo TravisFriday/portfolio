@@ -10,12 +10,15 @@ class App extends Component {
     return (
       <div className="demo-big-content">
         <Layout
+          id="main-layout"
           style={{
             background:
               "url(https://s3-us-west-2.amazonaws.com/tfportfolio.com/img/backgroundimg.png) center / cover"
+            //background: "white"
           }}
         >
           <Header
+            style={{ background: "black" }}
             transparent
             title={
               <Link
