@@ -76,7 +76,7 @@ function BlogPage(props) {
           </h1>
           <img
             src={BlogPost[params.id].img}
-            width="600px"
+            width="60%"
             style={{
               marginBottom: "3rem",
               marginTop: "10px"
@@ -95,7 +95,7 @@ function BlogPage(props) {
               textAlign: "left"
             }}
           >
-            {blog[params.id].text}
+            {BlogPost[params.id].body}
           </p>
         </Card>
       </Container>
