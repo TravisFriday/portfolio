@@ -25,7 +25,7 @@ class Contact extends Component {
           >
             <h2>Travis Friday</h2>
             <img
-              src="https://s3-us-west-2.amazonaws.com/tfportfolio.com/img/model1.jpg"
+              src="https://s3-us-west-2.amazonaws.com/tfportfolio.com/img/gradpic2.jpg"
               alt="avatar"
               style={{ height: "25rem" }}
             />

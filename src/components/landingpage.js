@@ -12,7 +12,7 @@ class Landing extends Component {
           <div className="col-lg-12">
             <div className="avatarPic">
               <img
-                src="https://s3-us-west-2.amazonaws.com/tfportfolio.com/img/linkedInpic.png"
+                src="https://s3-us-west-2.amazonaws.com/tfportfolio.com/img/linkedInpic500.png"
                 alt="avatar"
                 className="avatar-img"
               />

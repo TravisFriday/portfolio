@@ -57,7 +57,7 @@
 }
 
 .avatar-img {
-  height: 150px;
+  height: 200px;
   padding-top: 2em;
   display: inline;
   margin: 0 auto;
@@ -218,6 +218,9 @@
   .banner-text p {
     font-size: 0.9rem;
   }
+  .avatar-img {
+    height: 150px;
+  }
 }
 
 @media only screen and (max-width: 496px) {
@@ -236,6 +239,15 @@
   .social-links i {
     font-size: 2rem;
   }
+  .banner-text h1 {
+    padding-bottom: 0px;
+  }
+  .banner-text p {
+    padding: 0rem;
+  }
+  .banner-text i {
+    padding-top: 0px;
+  }
 }
 
 @media only screen and (max-width: 372px) {
@@ -244,8 +256,5 @@
   }
   .mdl-list__item-primary-content i {
     padding-right: 1rem;
-  }
-  .banner-text p {
-    font-size: 0.8rem;
   }
 }
