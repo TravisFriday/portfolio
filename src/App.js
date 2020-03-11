@@ -19,7 +19,7 @@ class App extends Component {
           }}
         >
           <Header
-            style={{ background: "black" }}
+            style={{ background: "black", opacity: "0.8" }}
             transparent
             title={
               <Link

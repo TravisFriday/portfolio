@@ -24,6 +24,7 @@
 }
 
 .material-icons {
+  border-radius: 100%;
   background-color: black;
   color: white;
 }
