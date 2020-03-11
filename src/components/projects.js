@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import { Container, Row, Col, Image, Card, CardDeck } from "react-bootstrap";
 import { CardActions, Button, Grid, Cell, Tab, Tabs } from "react-mdl";
+import Appview from "./appview.png";
 
 class Projects extends Component {
   constructor(props) {
@@ -97,22 +98,19 @@ class Projects extends Component {
           <Row>
             <CardDeck>
               <Card>
-                <Card.Img
-                  variant="top"
-                  src="https://s3-us-west-2.amazonaws.com/tfportfolio.com/img/appview.png"
-                />
+                <Card.Img variant="top" src={Appview} />
                 <Card.Body>
-                  <Card.Title>Card title</Card.Title>
+                  <Card.Title>Lumohacks 2018</Card.Title>
                   <Card.Text>
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
+                    Smart Companion: A prototype of a system comprised of a
+                    smart watch and an iOS app that would aid in the mitigation
+                    of stress and anxiety of first responders.
                   </Card.Text>
                 </Card.Body>
                 <CardActions border>
                   <Button
                     colored
-                    href="https://github.com/TravisFriday/MyReads"
+                    href="https://github.com/TravisFriday/lumohacks-2018"
                   >
                     GitHub
                   </Button>
@@ -188,8 +186,12 @@ class Projects extends Component {
           ripple
           style={{}}
         >
-          <Tab style={{ color: "white", background: "#333333" }}>React</Tab>
-          {/*<Tab style={{ color: "white", background: "#333333" }}>Python</Tab>*/}
+          <Tab style={{ color: "white", background: "#333333" }}>
+            Personal Projects
+          </Tab>
+          <Tab style={{ color: "white", background: "#333333" }}>
+            Hackathons
+          </Tab>
         </Tabs>
 
         <Grid>
