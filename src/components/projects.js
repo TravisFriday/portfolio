@@ -15,7 +15,8 @@ class Projects extends Component {
       return (
         <Container>
           <Row>
-            <CardDeck style={{ opacity: "100%" }}>
+            {/*<CardDeck style={{ opacity: "100%" }}> */}
+            <Col sm={12} md={6} lg={4} style={{ display: "flex", padding: 10 }}>
               <Card>
                 <Card.Img
                   variant="top"
@@ -39,8 +40,13 @@ class Projects extends Component {
                   >
                     GitHub
                   </Button>
+                  <Button colored href="https://myreads-tfriday.netlify.com/">
+                    Live Demo
+                  </Button>
                 </CardActions>
               </Card>
+            </Col>
+            <Col sm={12} md={6} lg={4} style={{ display: "flex", padding: 10 }}>
               <Card>
                 <Card.Img
                   variant="top"
@@ -62,8 +68,21 @@ class Projects extends Component {
                   >
                     GitHub
                   </Button>
+                  <Button colored href="https://www.tfportfolio.com/">
+                    Live Demo
+                  </Button>
                 </CardActions>
               </Card>
+            </Col>
+            <Col
+              sm={12}
+              md={6}
+              lg={4}
+              style={{
+                display: "flex",
+                padding: 10
+              }}
+            >
               <Card>
                 <Card.Img
                   variant="top"
@@ -86,9 +105,50 @@ class Projects extends Component {
                   >
                     GitHub
                   </Button>
+                  <Button
+                    colored
+                    href="https://travisfriday.github.io/freshwears/"
+                  >
+                    Live Demo
+                  </Button>
                 </CardActions>
               </Card>
-            </CardDeck>
+            </Col>
+            <Col
+              sm={12}
+              md={6}
+              lg={4}
+              style={{
+                display: "flex",
+                padding: 10
+              }}
+            >
+              <Card>
+                <Card.Img
+                  variant="top"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png"
+                  style={{ width: "100%", height: "30vh", objectFit: "cover" }}
+                />
+                <Card.Body>
+                  <Card.Title style={{ fontSize: "2rem", textAlign: "center" }}>
+                    Backend Tutorials
+                  </Card.Title>
+                  <Card.Text>
+                    Here is some coursework from Mosh\'s "The Complete Node.js
+                    Course". Learn to build highly-scalable, fast and secure
+                    RESTful APIs with Node, Express, and MongoDB
+                  </Card.Text>
+                </Card.Body>
+                <CardActions border>
+                  <Button
+                    colored
+                    href="https://github.com/TravisFriday/backend-tutorials"
+                  >
+                    GitHub
+                  </Button>
+                </CardActions>
+              </Card>
+            </Col>
           </Row>
         </Container>
       );
@@ -96,11 +156,21 @@ class Projects extends Component {
       return (
         <Container>
           <Row>
-            <CardDeck>
+            <Col
+              sm={12}
+              md={6}
+              lg={4}
+              style={{
+                display: "flex",
+                padding: 10
+              }}
+            >
               <Card>
                 <Card.Img variant="top" src={Appview} />
                 <Card.Body>
-                  <Card.Title>Lumohacks 2018</Card.Title>
+                  <Card.Title style={{ fontSize: "2rem", textAlign: "center" }}>
+                    Lumohacks 2018
+                  </Card.Title>
                   <Card.Text>
                     Smart Companion: A prototype of a system comprised of a
                     smart watch and an iOS app that would aid in the mitigation
@@ -116,50 +186,7 @@ class Projects extends Component {
                   </Button>
                 </CardActions>
               </Card>
-              <Card>
-                <Card.Img
-                  variant="top"
-                  src="https://s3-us-west-2.amazonaws.com/tfportfolio.com/img/appview.png"
-                />
-                <Card.Body>
-                  <Card.Title>Card title</Card.Title>
-                  <Card.Text>
-                    This card has supporting text below as a natural lead-in to
-                    additional content.{" "}
-                  </Card.Text>
-                </Card.Body>
-                <CardActions border>
-                  <Button
-                    colored
-                    href="https://github.com/TravisFriday/MyReads"
-                  >
-                    GitHub
-                  </Button>
-                </CardActions>
-              </Card>
-              <Card>
-                <Card.Img
-                  variant="top"
-                  src="https://s3-us-west-2.amazonaws.com/tfportfolio.com/img/appview.png"
-                />
-                <Card.Body>
-                  <Card.Title>Card title</Card.Title>
-                  <Card.Text>
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This card has even longer
-                    content than the first to show that equal height action.
-                  </Card.Text>
-                </Card.Body>
-                <CardActions border>
-                  <Button
-                    colored
-                    href="https://github.com/TravisFriday/MyReads"
-                  >
-                    GitHub
-                  </Button>
-                </CardActions>
-              </Card>
-            </CardDeck>
+            </Col>
           </Row>
         </Container>
       );
@@ -167,12 +194,6 @@ class Projects extends Component {
       return (
         <div>
           <h1>This is VueJS</h1>
-        </div>
-      );
-    } else if (this.state.activeTab === 3) {
-      return (
-        <div>
-          <h1>This is MongoDB</h1>
         </div>
       );
     }
@@ -192,6 +213,9 @@ class Projects extends Component {
           <Tab style={{ color: "white", background: "#333333" }}>
             Hackathons
           </Tab>
+          {/*<Tab style={{ color: "white", background: "#333333" }}>
+            School Projects
+    </Tab>*/}
         </Tabs>
 
         <Grid>
