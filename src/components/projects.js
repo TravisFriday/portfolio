@@ -91,11 +91,11 @@ class Projects extends Component {
                 />
                 <Card.Body>
                   <Card.Title style={{ fontSize: "2rem", textAlign: "center" }}>
-                    Inventory
+                    FreshWears
                   </Card.Title>
                   <Card.Text>
                     This is React/Redux web application that allows the user to
-                    add watches to their shopping cart.
+                    add/remove watches to their shopping cart.
                   </Card.Text>
                 </Card.Body>
                 <CardActions border>
