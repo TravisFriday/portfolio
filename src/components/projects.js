@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Container, Row, Col, Image, Card, CardDeck } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import { CardActions, Button, Grid, Cell, Tab, Tabs } from "react-mdl";
 import Appview from "./appview.png";
 

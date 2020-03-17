@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Grid, Cell, List, ListItem, ListItemContent } from "react-mdl";
+import { ListItemContent } from "react-mdl";
 import { Container, Row, Col, ListGroup } from "react-bootstrap";
 
 class Contact extends Component {

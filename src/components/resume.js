@@ -8,7 +8,10 @@ class Resume extends Component {
           height="1120px"
           width="100%"
           data="https://drive.google.com/file/d/1EDQYkwtDGD2n8X7hJZChNqargeyJ4GfC/preview"
-        />
+          alt="pdf"
+        >
+          dog
+        </object>
       </div>
     );
   }
