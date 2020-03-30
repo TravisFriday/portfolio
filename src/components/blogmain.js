@@ -36,7 +36,11 @@ export default class blogMain extends Component {
   }));
 
   componentDidMount() {
-    axios.get("/api/blog").then(response => {
+    const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    const url =
+      "https://mfc2xycfk2.execute-api.us-west-2.amazonaws.com/latest/api/blog/";
+    axios.get(proxyurl + url).then(response => {
+      console.log("it works!!");
       this.setState({
         loading: false,
         blog: response.data
@@ -49,16 +53,16 @@ export default class blogMain extends Component {
       console.log(b);
       return (
         <GridListTile
-          key={b.blog_id}
+          key={b.id}
           style={{ paddingLeft: "1rem", paddingRight: "1rem" }}
         >
-          <img src={b.images} alt={b.title} />
+          <img src={b.image} alt={b.title} />
 
           <GridListTileBar
             title={b.title}
             subtitle={<span>by: Travis Friday </span>}
             actionIcon={
-              <Link to={`/blogpage/${b.blog_id}`}>
+              <Link to={`/blogpage/${b.id}`}>
                 <IconButton
                   aria-label={`info about ${b.title}`}
                   className={this.classes.icon}
