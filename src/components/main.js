@@ -5,8 +5,8 @@ import LandingPage from "./landingpage";
 import Contact from "./contact";
 import Projects from "./projects";
 import Resume from "./resume";
-import Blog from "./blogmain";
-import BlogPage2 from "./blogpage2";
+import Blog from "./blog";
+import BlogPage2 from "./blogpage";
 
 const Main = () => (
   <Switch>
