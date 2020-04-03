@@ -23,7 +23,7 @@ export default class BlogPage2 extends Component {
   componentWillMount() {
     const proxyurl = "https://cors-anywhere.herokuapp.com/";
     const url =
-      "https://mfc2xycfk2.execute-api.us-west-2.amazonaws.com/latest/api/blog/";
+      "https://0yc3i3tqki.execute-api.us-west-2.amazonaws.com/latest/api/blog/";
     const id = this.props.match.params.id;
     axios.get(proxyurl + url + id).then(response => {
       this.setState({

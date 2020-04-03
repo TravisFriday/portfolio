@@ -9,7 +9,16 @@ import InfoIcon from "@material-ui/icons/Info";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import _ from "lodash";
-//import BlogPage2 from "";
+
+let config = {
+  headers: {
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "DELETE, POST, GET, OPTIONS",
+    "Access-Control-Allow-Headers":
+      "Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+  }
+};
 
 export default class blogMain extends Component {
   constructor(props) {
@@ -38,9 +47,8 @@ export default class blogMain extends Component {
   componentDidMount() {
     const proxyurl = "https://cors-anywhere.herokuapp.com/";
     const url =
-      "https://mfc2xycfk2.execute-api.us-west-2.amazonaws.com/latest/api/blog/";
-    axios.get(proxyurl + url).then(response => {
-      console.log("it works!!");
+      "https://0yc3i3tqki.execute-api.us-west-2.amazonaws.com/latest/api/blog";
+    axios.get(proxyurl + url, config).then(response => {
       this.setState({
         loading: false,
         blog: response.data
@@ -54,7 +62,12 @@ export default class blogMain extends Component {
       return (
         <GridListTile
           key={b.id}
-          style={{ paddingLeft: "1rem", paddingRight: "1rem" }}
+          className={this.classes.gridList}
+          style={{
+            paddingLeft: "1rem",
+            paddingRight: "1rem"
+            //margin: "0px 400px 0px"
+          }}
         >
           <img src={b.image} alt={b.title} />
 
