@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Covid from "../data/covid2.png";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { CardActions, Button, Grid, Cell, Tab, Tabs } from "react-mdl";
 import Appview from "./appview.png";
@@ -15,7 +15,44 @@ class Projects extends Component {
       return (
         <Container>
           <Row>
-            {/*<CardDeck style={{ opacity: "100%" }}> */}
+            <Col
+              sm={12}
+              md={6}
+              lg={4}
+              style={{
+                display: "flex",
+                padding: 10,
+              }}
+            >
+              <Card>
+                <Card.Img
+                  variant="top"
+                  src={Covid}
+                  style={{ width: "100%", height: "30vh", objectFit: "cover" }}
+                />
+                <Card.Body>
+                  <Card.Title style={{ fontSize: "2rem", textAlign: "center" }}>
+                    The Rona Stats
+                  </Card.Title>
+                  <Card.Text>
+                    This is a front-end application built in React which
+                    visualizes data about the impact of Covid-19 in each country
+                    around the world
+                  </Card.Text>
+                </Card.Body>
+                <CardActions border>
+                  <Button
+                    colored
+                    href="https://github.com/TravisFriday/covidtracker"
+                  >
+                    GitHub
+                  </Button>
+                  <Button colored href="https://theronastats.netlify.app/">
+                    Live Demo
+                  </Button>
+                </CardActions>
+              </Card>
+            </Col>
             <Col sm={12} md={6} lg={4} style={{ display: "flex", padding: 10 }}>
               <Card>
                 <Card.Img
@@ -80,7 +117,7 @@ class Projects extends Component {
               lg={4}
               style={{
                 display: "flex",
-                padding: 10
+                padding: 10,
               }}
             >
               <Card>
@@ -120,7 +157,7 @@ class Projects extends Component {
               lg={4}
               style={{
                 display: "flex",
-                padding: 10
+                padding: 10,
               }}
             >
               <Card>
@@ -162,7 +199,7 @@ class Projects extends Component {
               lg={4}
               style={{
                 display: "flex",
-                padding: 10
+                padding: 10,
               }}
             >
               <Card>
@@ -203,7 +240,7 @@ class Projects extends Component {
       <div id="tabs">
         <Tabs
           activeTab={this.state.activeTab}
-          onChange={tabId => this.setState({ activeTab: tabId })}
+          onChange={(tabId) => this.setState({ activeTab: tabId })}
           ripple
           style={{}}
         >
