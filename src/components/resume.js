@@ -7,7 +7,7 @@ class Resume extends Component {
         <object
           height="1120px"
           width="100%"
-          data="https://drive.google.com/file/d/19UbEsIfeo6G2fCDUpvo9XW-lj_U-o5Vp/preview"
+          data="https://drive.google.com/file/d/1KjuocR37VLHzc7PgVKE_w7tbOzOg_g5q/preview"
           alt="pdf"
         >
           resume

@@ -1,5 +1,9 @@
 import React, { Component } from "react";
-import Covid from "../data/covid2.png";
+import CovidPic from "../data/covid2.png";
+import FlashCardPic from "../data/flashcard.jpg"
+import FitnessTrackerPic from "../data/fitnessTracker.jpg"
+import WouldYouRatherPic from "../data/wouldYouRather.png";
+import TwitterPic from "../data/twitter.png";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { CardActions, Button, Grid, Cell, Tab, Tabs } from "react-mdl";
 import Appview from "./appview.png";
@@ -15,6 +19,78 @@ class Projects extends Component {
       return (
         <Container>
           <Row>
+          <Col
+              sm={12}
+              md={6}
+              lg={4}
+              style={{
+                display: "flex",
+                padding: 10,
+              }}
+            >
+              <Card>
+                <Card.Img
+                  variant="top"
+                  src={WouldYouRatherPic}
+                  style={{ width: "100%", height: "30vh", objectFit: "cover" }}
+                />
+                <Card.Body>
+                  <Card.Title style={{ fontSize: "2rem", textAlign: "center" }}>
+                    Would You Rather...
+                  </Card.Title>
+                  <Card.Text>
+                    An adaptation of the popular game Would You Rather
+                  </Card.Text>
+                </Card.Body>
+                <CardActions border>
+                  <Button
+                    colored
+                    href="https://github.com/TravisFriday/would-you-rather"
+                  >
+                    GitHub
+                  </Button>
+                  <Button colored href="https://would-you-rather-tf.netlify.app/">
+                    Live Demo
+                  </Button>
+                </CardActions>
+              </Card>
+            </Col>
+          <Col
+              sm={12}
+              md={6}
+              lg={4}
+              style={{
+                display: "flex",
+                padding: 10,
+              }}
+            >
+              <Card>
+                <Card.Img
+                  variant="top"
+                  src={TwitterPic}
+                  style={{ width: "100%", height: "30vh", objectFit: "cover" }}
+                />
+                <Card.Body>
+                  <Card.Title style={{ fontSize: "2rem", textAlign: "center" }}>
+                    Twitter
+                  </Card.Title>
+                  <Card.Text>
+                    A replica of the popular social media platform Twitter
+                  </Card.Text>
+                </Card.Body>
+                <CardActions border>
+                  <Button
+                    colored
+                    href="https://github.com/TravisFriday/twitter"
+                  >
+                    GitHub
+                  </Button>
+                  <Button colored href="https://tftwitter.netlify.app/">
+                    Live Demo
+                  </Button>
+                </CardActions>
+              </Card>
+            </Col>
             <Col
               sm={12}
               md={6}
@@ -27,7 +103,7 @@ class Projects extends Component {
               <Card>
                 <Card.Img
                   variant="top"
-                  src={Covid}
+                  src={CovidPic}
                   style={{ width: "100%", height: "30vh", objectFit: "cover" }}
                 />
                 <Card.Body>
@@ -36,7 +112,7 @@ class Projects extends Component {
                   </Card.Title>
                   <Card.Text>
                     This is a front-end application built in React which
-                    visualizes data about the impact of Covid-19 in each country
+                    visualizes data about the impact of Pic-19 in each country
                     around the world
                   </Card.Text>
                 </Card.Body>
@@ -193,6 +269,64 @@ class Projects extends Component {
       return (
         <Container>
           <Row>
+          <Col
+              sm={12}
+              md={6}
+              lg={4}
+              style={{
+                display: "flex",
+                padding: 10,
+              }}
+            >
+              <Card>
+                <Card.Img variant="top" src={FlashCardPic} />
+                <Card.Body>
+                  <Card.Title style={{ fontSize: "2rem", textAlign: "center" }}>
+                    Flashcard
+                  </Card.Title>
+                  <Card.Text>
+                    An iOS/Android application built in React Native that gives the user the ability to create flashcards, decks and test themselves on topics.
+                  </Card.Text>
+                </Card.Body>
+                <CardActions border>
+                  <Button
+                    colored
+                    href="https://github.com/TravisFriday/fitness-tracker"
+                  >
+                    GitHub
+                  </Button>
+                </CardActions>
+              </Card>
+            </Col>
+          <Col
+              sm={12}
+              md={6}
+              lg={4}
+              style={{
+                display: "flex",
+                padding: 10,
+              }}
+            >
+              <Card>
+                <Card.Img variant="top" src={FitnessTrackerPic} />
+                <Card.Body>
+                  <Card.Title style={{ fontSize: "2rem", textAlign: "center" }}>
+                    Fitness Tracker
+                  </Card.Title>
+                  <Card.Text>
+                  An iOS/Android application built in React Native where you can log your sporting activities, meals and sleep.
+                  </Card.Text>
+                </Card.Body>
+                <CardActions border>
+                  <Button
+                    colored
+                    href="https://github.com/TravisFriday/fitness-tracker"
+                  >
+                    GitHub
+                  </Button>
+                </CardActions>
+              </Card>
+            </Col>
             <Col
               sm={12}
               md={6}
@@ -245,10 +379,10 @@ class Projects extends Component {
           style={{}}
         >
           <Tab style={{ color: "white", background: "#333333" }}>
-            Personal Projects
+            Web Applications
           </Tab>
           <Tab style={{ color: "white", background: "#333333" }}>
-            Hackathons
+            Mobile Applications
           </Tab>
           {/*<Tab style={{ color: "white", background: "#333333" }}>
             School Projects
